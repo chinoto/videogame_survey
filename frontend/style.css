@@ -1,0 +1,47 @@
+#games_to_rank {
+  font-size: 65%;
+  text-align: center;
+  columns: 20em auto;
+  color: #444;
+}
+
+#games_to_rank > div {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #444;
+  color: #fff;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+#games_to_rank > div:has(:checked[value="0"]) {
+  background-color: #400;
+}
+#games_to_rank > div:has(:checked[value="1"]) {
+  background-color: #040;
+}
+#games_to_rank > div:has(:checked[value="2"]) {
+  background-color: #080;
+}
+
+#games_to_rank > div > h1 {
+  /* Make the text stand out more from the background */
+  text-shadow: #000 0 0 0.5em, #000 0 0 0.5em, #000 0 0 0.25em, #000 0 0 0.25em,
+    #000 0 0 0.25em, #000 0 0 0.25em, #000 0 0 0.25em;
+}
+
+#games_to_rank > div > img {
+  width: 100%;
+}
+
+#games_to_rank .options {
+  font-size: 3em;
+}
+
+#games_to_rank .options label:not(:has(:checked)) {
+  filter: grayscale(100%);
+}
+#games_to_rank .options input[type="radio"] {
+  display: none;
+}

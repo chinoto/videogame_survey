@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Game Gallery</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Legend of the Emoji</h1>
+    <div style="font-size: 1.5em">
+      <p>🙁: Will likely never play it</p>
+      <p>🤷: No opinion</p>
+      <p>🙂: Will at least try it</p>
+      <p>😄: I want to play as much as possible</p>
+    </div>
+
+    <form id="games_to_rank" action="javascript:void 0"></form>
+
+    <template>
+      <div>
+        <h1></h1>
+        <img />
+        <div class="options">
+          <!-- What should this be? 💩😮‍💨😐🙁👎🙁 -->
+          <label><input type="radio" value="0" />🙁</label>
+          <label> <input type="radio" value="" checked="" />🤷 </label>
+          <label><input type="radio" value="1" />🙂</label>
+          <label><input type="radio" value="2" />😄</label>
+        </div>
+      </div>
+    </template>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
